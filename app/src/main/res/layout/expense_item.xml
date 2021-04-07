@@ -66,10 +66,9 @@
         android:id="@+id/expense_date_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:text="DATE"
         app:layout_constraintBottom_toBottomOf="@+id/expense_source_text"
-        app:layout_constraintEnd_toStartOf="@+id/expense_source_text"
-        app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/expense_source_text"
         app:layout_constraintVertical_bias="0.0" />
@@ -78,22 +77,23 @@
         android:id="@+id/expense_source_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="176dp"
-        android:text="SOURCE"
+        android:layout_marginStart="132dp"
+        android:layout_marginEnd="139dp"
         android:gravity="center"
+        android:text="SOURCE"
         app:layout_constraintBottom_toBottomOf="@+id/expense_cost_text"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/expense_cost_text"
+        app:layout_constraintStart_toEndOf="@+id/expense_date_text"
         app:layout_constraintTop_toTopOf="@+id/expense_cost_text" />
 
     <TextView
         android:id="@+id/expense_cost_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
         android:text="COST"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.886"
-        app:layout_constraintStart_toEndOf="@+id/expense_source_text"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

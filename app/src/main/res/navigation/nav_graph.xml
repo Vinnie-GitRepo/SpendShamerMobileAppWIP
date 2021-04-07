@@ -9,10 +9,13 @@
         android:id="@+id/listFragmentVertical"
         android:name="nz.ac.uclive.vjj14.spendshamer.ListFragmentVertical"
         android:label="fragment_list_vertical"
-        tools:layout="@layout/fragment_list_vertical">
+        tools:layout="@layout/fragment_list">
         <action
             android:id="@+id/action_listFragmentVertical_to_graphFragmentVertical"
             app:destination="@id/graphFragmentVertical" />
+        <action
+            android:id="@+id/action_listFragmentVertical_to_entryFragment"
+            app:destination="@id/entryFragment" />
     </fragment>
 
     <fragment
@@ -20,5 +23,10 @@
         android:name="nz.ac.uclive.vjj14.spendshamer.GraphFragmentVertical"
         android:label="fragment_graph_vertical"
         tools:layout="@layout/fragment_graph_vertical" />
+    <fragment
+        android:id="@+id/entryFragment"
+        android:name="nz.ac.uclive.vjj14.spendshamer.ui.login.EntryFragment"
+        android:label="fragment_entry"
+        tools:layout="@layout/fragment_entry" />
 
 </navigation>

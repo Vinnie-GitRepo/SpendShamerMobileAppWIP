@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity(), ExpenseAdapter.OnExpenseListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.fragment_list_vertical)
+        setContentView(R.layout.fragment_list)
         val expenseAdapter = ExpenseAdapter(expenses, this)
         val recyclerView: RecyclerView = findViewById(R.id.expenses_recycler_view)
         recyclerView.adapter = expenseAdapter
