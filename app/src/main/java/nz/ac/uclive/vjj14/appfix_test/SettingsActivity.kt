@@ -23,8 +23,6 @@ class SettingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.expense_maker)
 
-        val thing = intent.get
-
         findViewById<Button>(R.id.button_addExpense).setOnClickListener {
             val newExpense = Expense(newExpenseCost, newExpenseDate, newExpenseSource)
         }
