@@ -1,4 +1,4 @@
-package nz.ac.uclive.vjj14.spendshamer
+package nz.ac.uclive.vjj14.appfix_test
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ExpenseAdapter(private val expenses: Array<Expense>, private val onExpenseListener: OnExpenseListener)
     : RecyclerView.Adapter<ExpenseAdapter.ExpenseViewHolder>() {
+
     class  ExpenseViewHolder(itemView: View, private val onExpenseListener: OnExpenseListener) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
         val textViewDate: TextView
         val textViewSource: TextView

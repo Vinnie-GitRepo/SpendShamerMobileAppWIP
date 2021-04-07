@@ -5,68 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <!--    <TextView-->
-    <!--        android:id="@+id/expense_text"-->
-    <!--        android:layout_width="100dp"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_margin="8dp"-->
-    <!--        android:text="Expense_Date"-->
-    <!--        android:textSize="24sp"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="0.0"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintVertical_bias="0.0" />-->
-
-
-    <!--    <TableRow-->
-    <!--        android:id="@+id/expense_list_item"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent">-->
-    <!--        <TextView-->
-    <!--            android:id="@+id/expense_date_text"-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_margin="8dp"-->
-    <!--            android:text="Expense_Date"-->
-    <!--            android:textSize="24sp"-->
-    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--            app:layout_constraintStart_toStartOf="parent"-->
-    <!--            app:layout_constraintTop_toTopOf="parent"-->
-    <!--            app:layout_constraintLeft_toLeftOf="@id/expense_source_text"/>-->
-    <!--        <TextView-->
-    <!--            android:id="@+id/expense_source_text"-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="match_parent"-->
-    <!--            android:layout_margin="8dp"-->
-    <!--            android:text="Expense_Source"-->
-    <!--            android:textSize="24sp"-->
-    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--            app:layout_constraintStart_toStartOf="parent"-->
-    <!--            app:layout_constraintTop_toTopOf="parent"-->
-    <!--            app:layout_constraintRight_toRightOf="@id/expense_date_text"-->
-    <!--            app:layout_constraintLeft_toLeftOf="@id/expense_cost_text"/>-->
-    <!--        <TextView-->
-    <!--            android:id="@+id/expense_cost_text"-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_margin="8dp"-->
-    <!--            android:text="Expense_Cost"-->
-    <!--            android:textSize="24sp"-->
-    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--            app:layout_constraintStart_toStartOf="parent"-->
-    <!--            app:layout_constraintTop_toTopOf="parent"-->
-    <!--            app:layout_constraintRight_toRightOf="@id/expense_source_text"/>-->
-    <!--    </TableRow>-->
-
     <TextView
         android:id="@+id/expense_date_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="5dp"
         android:text="DATE"
         app:layout_constraintBottom_toBottomOf="@+id/expense_source_text"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,15 +25,15 @@
         android:gravity="center"
         android:text="SOURCE"
         app:layout_constraintBottom_toBottomOf="@+id/expense_cost_text"
-        app:layout_constraintEnd_toStartOf="@+id/expense_cost_text"
-        app:layout_constraintStart_toEndOf="@+id/expense_date_text"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/expense_cost_text" />
 
     <TextView
         android:id="@+id/expense_cost_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="5dp"
         android:text="COST"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

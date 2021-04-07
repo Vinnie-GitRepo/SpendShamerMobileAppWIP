@@ -1,4 +1,4 @@
-package nz.ac.uclive.vjj14.spendshamer
+package nz.ac.uclive.vjj14.appfix_test
 
 import org.junit.Test
 

@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "SpendShamer"
+rootProject.name = "AppFix_Test"
